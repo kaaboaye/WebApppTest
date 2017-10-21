@@ -7,18 +7,87 @@
 	},
 	"item": [
 		{
-			"name": "/users",
+			"name": "Items",
+			"description": "",
+			"item": [
+				{
+					"name": "Items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{host}}Items",
+							"host": [
+								"{{host}}Items"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Items/someId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{host}}Items/someId",
+							"host": [
+								"{{host}}Items"
+							],
+							"path": [
+								"someId"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "NewItem",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "jeeeej",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}Items",
+							"host": [
+								"{{host}}Items"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": "{{host}}/users",
+					"raw": "{{host}}users",
 					"host": [
-						"{{host}}"
-					],
-					"path": [
-						"users"
+						"{{host}}users"
 					]
 				},
 				"description": ""
