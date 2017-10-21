@@ -1,0 +1,29 @@
+{
+	"info": {
+		"name": "WebAppTest",
+		"_postman_id": "b553aba4-5a18-d65c-b9a8-19650cddcf71",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{host}}/users",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
